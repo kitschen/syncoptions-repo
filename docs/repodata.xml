@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<extensions>
+<details>
+<title lang="EN">Peter Watkins' SqueezeCenter extensions</title>
+</details>
+<plugins>
+<plugin name="SyncOptions" version="2.3.0" minTarget="7.9" maxTarget="9.*">
+<title lang="EN">SyncOptions</title>
+<desc lang="EN">Gives new settings for synchronizing players: power on/off sync; relative volume sync; "wait for next track" to avoid disruptions; "unsync at power off"; restore local playlist after leaving a sync group. (Boom, Classic, Radio, Receiver, Squeezebox1, Slimp3, SoftSqueeze, Touch, Transporter)</desc>
+<changes lang="EN">2.3.0: added power on/off synchronization across sync groups; 2.2.6: updated URL and email in plugin info; 2.2.5: allow in LMS 9.* (untested); 2.2.4: allow running in LMS 8.0; 2.2.3: fix song title API usage bug; 2.2.0: relative player volume sync; 2.1.25: squelch deprecation warnings in 7.4, support --noweb</changes>
+<url>https://kitschen.github.io/syncoptions-repo/SyncOptions/SyncOptions-2.3.0.zip</url>
+<sha>8b40a3f792e58ac4d0e8609a328c3a64a34355d1</sha>
+<link>https://tuxreborn.netlify.app/slim/SyncOptions.html</link>
+<creator>Watkins, Peter</creator>
+<email>peter@townsendwatkins.com</email>
+</plugin>
+</plugins>
+</extensions>

@@ -1,0 +1,71 @@
+[% PROCESS settings/header.html %]
+
+	<div class="settingSection">
+		<div class="groupDesc">[% "SETUP_GROUP_PLUGIN_SYNCOPTIONS_DESC" | string %]</div>
+
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_UNSYNC_HEAD" | string | upper %]</div>
+		<label for="unsync">[% "SETUP_PLUGIN-SYNCOPTIONS_UNSYNC" | string %]</label></td>
+		<br>
+                <select name="[% pw.pref_prefix %]unsync">
+                        <option value="0" [% IF prefs.unsync == "0" %]selected[% END %]>[% "MCOFF" | string %]</option>
+                        <option value="1" [% IF prefs.unsync == "1" %]selected[% END %]>[% "MCON" | string %]</option>
+                </select>
+		<br><br>
+
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_POWERSYNC_HEAD" | string | upper %]</div>
+		<label for="powerSync">[% "SETUP_PLUGIN-SYNCOPTIONS_POWERSYNC" | string %]</label></td>
+		<br>
+                <select name="[% pw.pref_prefix %]powerSync">
+                        <option value="0" [% IF prefs.powerSync == "0" %]selected[% END %]>[% "MCOFF" | string %]</option>
+                        <option value="1" [% IF prefs.powerSync == "1" %]selected[% END %]>[% "MCON" | string %]</option>
+                </select>
+		<br><br>
+	
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC_HEAD" | string | upper %]</div>
+		<label for="volumeSync">[% "SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC" | string %]</label></td>
+		<br>
+                <select name="[% pw.pref_prefix %]volumeSync">
+                        <option value="0" [% IF prefs.volumeSync == "0" %]selected[% END %]>[% "MCOFF" | string %]</option>
+                        <option value="1" [% IF prefs.volumeSync == "1" %]selected[% END %]>[% "MCON" | string %]</option>
+                </select>
+		<br/>
+		<label for="delay">[% "SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC_DELAY" | string %]</label></td>
+		<br><input type="text" class="stdedit" name="[% pw.pref_prefix %]volumeSyncDelay" id="volumeSyncDelay" value="[% prefs.volumeSyncDelay %]" />
+		<br><br>
+
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_WAIT_HEAD" | string | upper %]</div>
+		<label for="wait">[% "SETUP_PLUGIN-SYNCOPTIONS_WAIT" | string %]</label>
+		<br>
+                <select name="[% pw.pref_prefix %]wait">
+                        <option value="0" [% IF prefs.wait == "0" %]selected[% END %]>[% "DEFAULT_SKIN" | string %]</option>
+                        <option value="1" [% IF prefs.wait == "1" %]selected[% END %]>[% "PLUGIN_SYNCOPTIONS_WAIT" | string %]</option>
+                        <option value="2" [% IF prefs.wait == "2" %]selected[% END %]>[% "PLUGIN_SYNCOPTIONS_JUMPIN" | string %]</option>
+                </select>
+		<br><br>
+
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_RESTORE_HEAD" | string | upper %]</div>
+		<label for="unsync">[% "SETUP_PLUGIN-RESTORE" | string %]</label></td>
+		<br>
+                <select name="[% pw.pref_prefix %]restoreAfterUnsync">
+                        <option value="0" [% IF prefs.restoreAfterUnsync == "0" %]selected[% END %]>[% "MCOFF" | string %]</option>
+                        <option value="1" [% IF prefs.restoreAfterUnsync == "1" %]selected[% END %]>[% "MCON" | string %]</option>
+                </select>
+		<br><br>
+		
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_DELAY_HEAD" | string | upper %]</div>
+		<label for="delay">[% "SETUP_PLUGIN-SYNCOPTIONS_DELAY" | string %]</label></td>
+		<br><input type="text" class="stdedit" name="[% pw.pref_prefix %]delay" id="delay" value="[% prefs.delay %]" />
+		<br><br>
+		
+		<div class="groupHead">[% "SETUP_PLUGIN-SYNCOPTIONS_PRECISION_HEAD" | string | upper %]</div>
+		<label for="precision">[% "SETUP_PLUGIN-SYNCOPTIONS_PRECISION" | string %]</label></td>
+		<br><input type="text" class="stdedit" name="[% pw.pref_prefix %]precision" id="precision" value="[% prefs.precision %]" />
+		<br><br>
+
+	</div>
+
+<a href="/Classic/plugins/SyncOptions/html/donate.html">[% "PETERW_DONATIONS_APPRECIATED" | string %]</a>
+<br />
+<br />
+
+[% PROCESS settings/footer.html %]

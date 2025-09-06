@@ -1,0 +1,116 @@
+PLUGIN_SYNCOPTIONS
+	EN	SyncOptions
+
+PLUGIN_SYNCOPTIONS_DESC
+	EN	Gives new settings for synchronizing players: relative volume sync; "wait for next track" to avoid disruptions; "unsync at power off"; restore local playlist after leaving a sync group. (Boom, Classic, Radio, Receiver, Squeezebox1, Slimp3, SoftSqueeze, Touch, Transporter) 
+
+PLUGIN_SYNCOPTIONS_REPO_DESC
+	EN	2.2.6: updated URL and email in plugin info; 2.2.5: allow in LMS 9.* (untested); 2.2.4: allow running in LMS 8.0; 2.2.3: fix song title API usage bug; 2.2.0: relative player volume sync; 2.1.25: squelch deprecation warnings in 7.4, support --noweb
+
+DEBUG_PLUGIN_SYNCOPTIONS
+	EN	SyncOptions
+
+PLUGIN_SYNCOPTIONS_BASIC_SETTINGS
+	EN	SyncOptions settings
+
+PLUGIN_SYNCOPTIONS_RELATIVE_SYNC_NOW
+	EN	Volume changes will now affect all synced players
+
+PLUGIN_SYNCOPTIONS_WAITING_FOR
+	EN	Waiting for new track on 
+
+PLUGIN_SYNCOPTIONS_SYNCING_WITH
+	EN	Syncing with 
+
+PLUGIN_SYNCOPTIONS_CANCEL
+	EN	Canceling sync
+
+PLUGIN_SYNCOPTIONS_PLAY_TO_SYNC_NOJUMP
+	EN	Press Play to restart track, Left to cancel
+
+PLUGIN_SYNCOPTIONS_PLAY_TO_SYNC
+	EN	Press Right to sync up, Play to restart track
+
+SETUP_GROUP_PLUGIN_SYNCOPTIONS
+	EN	SyncOptions
+
+SETUP_PLUGIN-SYNCOPTIONS_UNSYNC
+	EN	Whether to unsync a player from any sync groups when it is powered off.
+
+SETUP_PLUGIN-SYNCOPTIONS_UNSYNC_HEAD
+	EN	Unsync at power off
+
+SETUP_PLUGIN-SYNCOPTIONS_POWERSYNC_HEAD
+	EN	Power synchronization
+
+SETUP_PLUGIN-SYNCOPTIONS_POWERSYNC
+	EN	Whether power on/off changes in one synced player should cause the same power changes in all other players with which it is synced. When enabled, turning on one player will turn on all synced players, and turning off one player will turn off all synced players.
+
+SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC_HEAD
+	EN	Relative volume synchronization
+
+SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC
+	EN	Whether volume changes in one synced player should cause proportionate changes in the other players with which it is synced. For instance, if you have Squeezebox A at volume 50, Squeezebox B at volume 60 and you increase the volume on Squeezebox A to 75, then Squeezebox B would increase its volume to 90.
+
+SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC_DELAY_HEAD
+	EN	Volume sync delay
+
+SETUP_PLUGIN-SYNCOPTIONS_VOLSYNC_DELAY
+	EN	Wait this many seconds after a player joins a sync group before changes to that player's volume affect the other Squeezeboxes with which it is synced.
+
+SETUP_PLUGIN-SYNCOPTIONS_WAIT
+	EN	"Wait" behavior. When syncing with a player that is playing a local song, whether to sync and restart the song ("Default"), wait for the next track to start, or attempt to sync mid-song. "Wait for next track" will allow you to press a button on the remote control to force immediate sync or attempt mid-song sync.
+
+SETUP_PLUGIN-SYNCOPTIONS_WAIT_HEAD
+	EN	Wait for next track
+
+SETUP_GROUP_PLUGIN_SYNCOPTIONS_DESC
+	EN	SyncOptions settings
+
+PLUGIN_SYNCOPTIONS_WAIT
+	EN	Wait for the next track
+
+PLUGIN_SYNCOPTIONS_JUMPIN
+	EN	Attempt mid-song sync
+
+SETUP_PLUGIN-SYNCOPTIONS_DELAY
+	EN	How many seconds into a track a new player can join without waiting for the next track.
+
+SETUP_PLUGIN-SYNCOPTIONS_DELAY_HEAD
+	EN	Allow late joining to restart sync group
+
+SETUP_PLUGIN-SYNCOPTIONS_PRECISION_HEAD
+	EN	Precision for detecting new track
+
+SETUP_PLUGIN-SYNCOPTIONS_PRECISION
+	EN	If "wait" is set at "Wait for the next track", SyncOptions will try to add a new "joiner" to a sync group as soon as the group starts playing a new track. This is somewhat imprecise. Starting a few seconds before the next track starts, SyncOptions will check periodically to see if the new track has started. This setting controls how many seconds (or fractions of a second) SyncOptions will wait between checks. Set too low, and SyncOptions will check too often and SqueezeCenter may behave sluggishly when it is about to add a new "joiner" to a sync group; set too high, and too much of the next track will play before the new players sync in and force a restart.
+
+SETUP_PLUGIN-RESTORE
+	EN	SyncOptions saves each player's playlist when it joins a sync group. This setting determines whether SyncOptions restores/reloads that playlist when a player leaves a sync group.
+
+SETUP_PLUGIN-SYNCOPTIONS_RESTORE_HEAD
+	EN	Restore playlist after unsyncing
+
+PLUGIN_SYNCOPTIONS_GROUP_VOLUME
+	EN	Sync group volume
+
+PLUGIN_SYNCOPTIONS_ADJUST_GROUP_VOLUME
+	EN	Adjust group volume
+
+PLUGIN_SYNCOPTIONS_ADJUST_PLAYER_VOLUME
+	EN	Adjust local volume
+
+PLUGIN_SYNCOPTIONS_ADJUST_GROUP_VOLUME_NOW
+	EN	Now adjust group volume
+
+PLUGIN_SYNCOPTIONS_ADJUST_PLAYER_VOLUME_NOW
+	EN	Now adjust local volume
+
+PLUGIN_SYNCOPTIONS_VOLUME
+	EN	Volume
+
+PETERW_DONATIONS_APPRECIATED
+	EN	Donations appreciated
+
+PETERW_DONATION_PAGE_TEXT
+	EN	<h2>Donations</h2> <p>Over the years I have spent many hours developing, improving, and maintaining my SqueezeCenter plugins. They're not perfect, but I hope you find them valuable, welcome your <a href="mailto:peterw@tux.org">feedback</a>, and appreciate your donations. You can use the button below to donate any amount of your choosing via Paypal.</p> <p>Thank you,<br /><br />-Peter</p>

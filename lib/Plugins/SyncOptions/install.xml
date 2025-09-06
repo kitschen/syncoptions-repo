@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<extension>
+<id>SyncOptions.2.3.0</id>
+        <name>PLUGIN_SYNCOPTIONS</name>
+        <module>Plugins::SyncOptions::Plugin</module>
+        <version>2.3.0</version>
+        <description>PLUGIN_SYNCOPTIONS_DESC</description>
+        <creator>Peter Watkins</creator>
+        <email>peter@townsendwatkins.com</email>
+	<defaultState>enabled</defaultState>
+        <homepageURL>https://tuxreborn.netlify.app/#slim</homepageURL>
+	<optionsURL>plugins/SyncOptions/settings/basic.html</optionsURL>        
+	<type>2</type><!-- type=extension -->
+        <targetApplication><id>SlimServer</id>
+                <minVersion>7.9</minVersion>
+                <maxVersion>9.*</maxVersion>
+        </targetApplication>
+</extension>
