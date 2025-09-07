@@ -78,7 +78,7 @@ make structure
 ## Installation
 
 ### Method 1: Repository Installation (Recommended)
-1. Add repository URL to LMS: `https://kitschen.github.io/syncoptions-repo/slim/slim7/repodata.xml`
+1. Add repository URL to LMS: `https://kitschen.github.io/syncoptions-repo/docs/repodata.xml`
 2. Install "SyncOptions" from the plugin list
 
 ### Method 2: Manual Installation
@@ -105,7 +105,7 @@ make structure
 The `docs/` directory contains the LMS repository structure for GitHub Pages:
 - Upload repository to GitHub 
 - Configure GitHub Pages to publish from `/docs` folder
-- LMS will read from `https://yourusername.github.io/yourrepo/repodata.xml`
+- LMS will read from `https://kitschen.github.io/syncoptions-repo/docs/repodata.xml`
 
 ## License
 

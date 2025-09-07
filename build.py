@@ -24,7 +24,7 @@ BUILD_DIR = "build"
 DIST_DIR = "docs/SyncOptions"
 ZIP_FILE = f"{DIST_DIR}/{PLUGIN_NAME}-{VERSION}.zip"
 REPO_XML = "docs/repodata.xml"
-GITHUB_REPO_URL = "https://kitschen.github.io/syncoptions-repo"  # Update this for your repo
+GITHUB_REPO_URL = "https://kitschen.github.io/syncoptions-repo/docs"  # GitHub Pages serves from root, docs/ is in URL
 
 def clean_build():
     """Remove build directory if it exists"""
