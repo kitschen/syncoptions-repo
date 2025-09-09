@@ -16,14 +16,14 @@ build:
 # Clean build artifacts
 clean:
 	rm -rf build/
-	rm -f docs/SyncOptions/$(PLUGIN_NAME)-$(VERSION).zip
+	rm -f dist/SyncOptions/$(PLUGIN_NAME)-$(VERSION).zip
 
 # Test the build (basic validation)
 test: build
 	@echo "Testing plugin structure..."
-	@if [ -f "docs/SyncOptions/$(PLUGIN_NAME)-$(VERSION).zip" ]; then \
+	@if [ -f "dist/SyncOptions/$(PLUGIN_NAME)-$(VERSION).zip" ]; then \
 		echo "✓ ZIP file created successfully"; \
-		unzip -t "docs/SyncOptions/$(PLUGIN_NAME)-$(VERSION).zip" > /dev/null && echo "✓ ZIP file is valid"; \
+		unzip -t "dist/SyncOptions/$(PLUGIN_NAME)-$(VERSION).zip" > /dev/null && echo "✓ ZIP file is valid"; \
 	else \
 		echo "✗ ZIP file not found"; \
 		exit 1; \

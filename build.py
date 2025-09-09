@@ -21,10 +21,10 @@ from pathlib import Path
 PLUGIN_NAME = "SyncOptions"
 VERSION = "2.3.0"
 BUILD_DIR = "build"
-DIST_DIR = "docs/SyncOptions"
+DIST_DIR = "dist/SyncOptions"
 ZIP_FILE = f"{DIST_DIR}/{PLUGIN_NAME}-{VERSION}.zip"
-REPO_XML = "docs/repodata.xml"
-GITHUB_REPO_URL = "https://kitschen.github.io/syncoptions-repo/docs"  # GitHub Pages serves from root, docs/ is in URL
+REPO_XML = "dist/repodata.xml"
+GITHUB_REPO_URL = "https://kitschen.github.io/syncoptions-repo/dist" 
 
 def clean_build():
     """Remove build directory if it exists"""
@@ -49,11 +49,11 @@ def create_plugin_structure():
         shutil.copytree("share/HTML", f"{plugin_dir}/HTML")
         print("✓ Copied HTML templates")
     
-    # Copy other files
-    for file in ["strings.txt", "COPYRIGHT.txt"]:
-        if os.path.exists(file):
-            shutil.copy(file, plugin_dir)
-            print(f"✓ Copied {file}")
+    # Copy txt files
+    if os.path.exists("share/txt"):
+        shutil.copytree("share/txt", f"{plugin_dir}")
+        print("✓ Copied txt files")
+
 
 def create_zip():
     """Create ZIP file with proper path separators"""
